@@ -3,7 +3,7 @@ module.exports = {
     title: `josephriosdev`,
     author: `Joseph Rios`,
     description: `A blog about stuff.`,
-    siteUrl: `friendly-goldstine-f5340c.netlify.com`,
+    siteUrl: `https://friendly-goldstine-f5340c.netlify.com`,
     social: {
       twitter: `rustonconsole`,
     },

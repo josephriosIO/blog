@@ -7,12 +7,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Tags = ({ data }) => {
+const Tags = ({ data, location }) => {
   const allTags = data.allMarkdownRemark.group
   const siteTitle = data.site.siteMetadata.title
-
+console.log(location);
   return (
-    <Layout title={siteTitle}>
+    <Layout title={siteTitle} location={location}>
       <div>
         <SEO title="Tags" />
         <h2>Tags</h2>

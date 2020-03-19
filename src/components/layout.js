@@ -69,8 +69,4 @@ class Layout extends React.Component {
   }
 }
 
-layout.defaultProps = {
-  location: {},
-}
-
 export default Layout

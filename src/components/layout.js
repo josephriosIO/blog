@@ -3,7 +3,7 @@ import Header from "./header"
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { title, children, location } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     // let header
 
@@ -52,50 +52,17 @@ class Layout extends React.Component {
     return (
       <div className="container">
         <div className="content">
-          <Header siteTitle={title} />
+          <Header siteTitle={title} location={location}/>
           <main>{children}</main>
         </div>
-        <footer>
+        <footer style={{display: 'flex', alignContent: 'center', justifyContent: 'center', marginBottom: '45px'}}>
           © {new Date().getFullYear()} <a
-              href="https://veryben.com"
+              href="https://josephrios.dev"
               target="_blank"
               rel="noopener noreferrer"
             >
-              阿江
+							{' '}Joseph Rios
             </a>
-          <div className="social-links">
-            <a
-              href="https://twitter.com/anikijiang"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              twitter
-            </a>{" "}
-            &bull;{" "}
-            <a
-              href="https://instagram.com/veryben"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              instagram
-            </a>{" "}
-            &bull;{" "}
-            <a
-              href="https://github.com/teaware"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github
-            </a>{" "}
-            &bull;{" "}
-            <a
-              href="https://codepen.io/farm-boy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              codepen
-            </a>
-          </div>
         </footer>
       </div>
     )

@@ -1,23 +1,27 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
-
 import Headroom from "react-headroom"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
+import pic01 from '../assets/moon.png'
+import pic02 from '../assets/sun.png'
+
 class Header extends React.Component {
   render() {
-    const { siteTitle } = this.props
+		const { siteTitle, location } = this.props
     return (
       <header>
         <Headroom>
           <div className="navbar">
-            <h1>
-              <AniLink cover direction="down" bg="#8c61ff" to="/">
-                {siteTitle}
+					<AniLink cover direction="down" bg="#89cff0" to="/">
+						{location.pathname === '/' ? null : (
+						<h1>
+              <AniLink cover direction="down" bg="#89cff0" to="/">
+							← {siteTitle}
               </AniLink>
-            </h1>
-
+            </h1>)}
+						</AniLink>
             <ThemeToggler>
               {({ theme, toggleTheme }) => (
                 <label className="tog">
@@ -29,10 +33,12 @@ class Header extends React.Component {
                     checked={theme === "dark"}
                   />
                   {theme === "dark" ? (
-                    <div className="on">
+                    <div>
+											<img src={pic02} alt='moon' />
                     </div>
                   ) : (
-                    <div className="off">
+                    <div>
+												<img src={pic01} alt='sun'/>
                     </div>
                   )}
                 </label>

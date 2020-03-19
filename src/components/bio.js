@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
+import img from '../assets/profile-pic.jpg'
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -35,12 +34,27 @@ const Bio = () => {
           overflow: "hidden",
         }}
       >
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="阿江" />
+        <img src={img} alt="Joseph Rios" />
       </div>
       <p style={{ maxWidth: 180 }}>
-        Blog by <a href="https://twitter.com/anikijiang">anikijiang</a>
+       <strong>Joseph Rios</strong>
         <br />
-        I make my point
+        <div>
+				<a href={`https://twitter.com/rustonconsole`} style={{
+					backgroundColor: '#38a1f3',
+					color: '#fff',
+					display: 'inline-flex',
+					cursor: 'pointer',
+					padding: '7px 8px',
+					margin: '3px 1.5px',
+					borderRadius: '3px',
+				}}>
+					<i className='icon-twitter'></i>
+					<span style={{
+						marginLeft: '6px',
+					}}>Follow</span>
+        </a>
+				</div>
       </p>
     </div>
   )

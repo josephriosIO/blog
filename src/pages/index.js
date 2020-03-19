@@ -123,7 +123,7 @@ class Index extends React.Component {
             ref={n => (this.cover = n)}
             style={{
               position: "fixed",
-              background: "#8c61ff",
+              background: "#89cff0",
               top: 0,
               left: 0,
               width: "100vw",

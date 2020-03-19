@@ -14,14 +14,14 @@ class Header extends React.Component {
       <header>
         <Headroom>
           <div className="navbar">
-					<AniLink cover direction="down" bg="#89cff0" to="/">
+					<div>
 						{location.pathname === '/' ? null : (
 						<h1>
               <AniLink cover direction="down" bg="#89cff0" to="/">
 							← {siteTitle}
               </AniLink>
             </h1>)}
-						</AniLink>
+						</div>
             <ThemeToggler>
               {({ theme, toggleTheme }) => (
                 <label className="tog">

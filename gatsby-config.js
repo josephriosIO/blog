@@ -3,7 +3,7 @@ module.exports = {
     title: `josephriosdev`,
     author: `Joseph Rios`,
     description: `A blog about stuff.`,
-    siteUrl: ``,
+    siteUrl: `friendly-goldstine-f5340c.netlify.com`,
     social: {
       twitter: `rustonconsole`,
     },
@@ -121,7 +121,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-point`,
+        name: `josephriosdev`,
         short_name: `point`,
         start_url: `/`,
         background_color: `#ffffff`,

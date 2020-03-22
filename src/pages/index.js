@@ -91,16 +91,6 @@ class Index extends React.Component {
                   <h2>
                     <TransitionLink
                       to={`/${node.fields.slug}`}
-                      exit={{
-                        length: 1,
-                        trigger: ({ exit }) =>
-                          this.moveInDirection(exit, "left"),
-                        // state: { char: "exit state" },
-                      }}
-                      entry={{
-                        delay: 0.5,
-                        trigger: ({ node }) => this.char(node),
-                      }}
                     >
                       {title}
                     </TransitionLink>

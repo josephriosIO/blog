@@ -9,8 +9,8 @@ import SEO from "../components/seo"
 
 const Tags = ({ data, location }) => {
   const allTags = data.allMarkdownRemark.group
-  const siteTitle = data.site.siteMetadata.title
-console.log(location);
+	const siteTitle = data.site.siteMetadata.title
+
   return (
     <Layout title={siteTitle} location={location}>
       <div>

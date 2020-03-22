@@ -23,7 +23,7 @@ class Post extends React.Component {
         <article className="post">
           <header>
             <h2>
-              <Lettering title={post.frontmatter.title} />
+              {post.frontmatter.title}
             </h2>
             <p className="date">{post.frontmatter.date}</p>
             {post.frontmatter.tags ? (

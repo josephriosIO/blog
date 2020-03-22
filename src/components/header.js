@@ -17,7 +17,7 @@ class Header extends React.Component {
 					<div>
 						{location.pathname === '/' ? null : (
 						<h1>
-              <AniLink cover direction="down" bg="#89cff0" to="/">
+              <AniLink to="/">
 							← {siteTitle}
               </AniLink>
             </h1>)}

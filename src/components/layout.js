@@ -59,7 +59,8 @@ class Layout extends React.Component {
           © {new Date().getFullYear()} <a
               href="https://josephrios.dev"
               target="_blank"
-              rel="noopener noreferrer"
+							rel="noopener noreferrer"
+							style={{color: 'yellow', paddingLeft: '5px'}}
             >
 							{' '}Joseph Rios
             </a>
